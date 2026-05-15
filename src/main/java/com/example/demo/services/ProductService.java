@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entities.Product;
 import com.example.demo.repositories.ProductRepository;
 
+//La capa Service contiene la lógica de negocio.
 @Service
 public class ProductService implements IProductService {
 

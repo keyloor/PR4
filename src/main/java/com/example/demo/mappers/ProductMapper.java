@@ -9,6 +9,7 @@ import com.example.demo.dtos.ProductDto;
 import com.example.demo.entities.Product;
 import com.example.demo.models.ProductResponseModel;
 
+//El Mapper convierte objetos entre: Entity ↔ DTO
 @Component
 public class ProductMapper {
 

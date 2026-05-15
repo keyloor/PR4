@@ -26,13 +26,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 
+// Representa una tabla de la base de datos.
 public class Product {
 
-    @Id
+    @Id // llave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false, length = 100)
+    @Column(name = "name", nullable = false, length = 100) //Columnas
     private String name;
 
     @Column(name = "description", length = 255)

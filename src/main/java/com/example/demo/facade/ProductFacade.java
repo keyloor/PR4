@@ -8,13 +8,14 @@ import com.example.demo.dtos.ProductDto;
 import com.example.demo.mappers.ProductMapper;
 import com.example.demo.services.IProductService;
 
+//La Facade coordina Services y Mappers. Oculta complejidad al Controller.
 public class ProductFacade implements IProductFacade {
 
     @Autowired
-    private IProductService productService;
+    IProductService productService;
 
     @Autowired
-    private ProductMapper productMapper;
+    ProductMapper productMapper;
 
     @Override
     public List<ProductDto> getAll() {
